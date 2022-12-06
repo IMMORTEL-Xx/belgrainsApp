@@ -1,20 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+<ion-button id="popover-button1" shape="round" class = "button button-large">Commandes</ion-button>
+<ion-popover trigger="popover-button1" [dismissOnSelect]="true">
+  <ng-template>
+    <ion-content>
+      <ion-list>
+        <ion-item [button]="true" [detail]="false">Mes commandes</ion-item>
+        <ion-item [button]="true" [detail]="false">Mes commandes publiques</ion-item>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-popover>
+<ion-button id="popover-button2" shape="round" class = "button button-large">Stocks</ion-button>
+<ion-popover trigger="popover-button2" [dismissOnSelect]="true">
+  <ng-template>
+    <ion-content>
+      <ion-list>
+        <ion-item [button]="true" [detail]="false">Mon Stock</ion-item>
+        <ion-item [button]="true" [detail]="false">Entrêpot</ion-item>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-popover>
+<ion-button id="popover-button3" shape="round" class = "button button-large">Ventes</ion-button>
+<ion-popover trigger="popover-button3" [dismissOnSelect]="true">
+  <ng-template>
+    <ion-content>
+      <ion-list>
+        <ion-item [button]="true" [detail]="false">Factures</ion-item>
+        <ion-item [button]="true" [detail]="false">Ventes</ion-item>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-popover>
