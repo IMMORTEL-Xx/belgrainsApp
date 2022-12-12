@@ -1,16 +1,12 @@
 
 <ion-content id="content">
-    <ion-label position="stacked">Mot de passe</ion-label>
-    <ion-input type="password" placeholder="Entrez votre mot de passe"></ion-input>
-  <ion-button id="bouton1" (click)="deroulerListe1()" shape="round" class = "button button-large">Commandes</ion-button>
-    <ion-button id="boutonListe" *ngIf ="liste1" shape="round" class = "button button-large">Mes commandes</ion-button>
-    <ion-button id="boutonListe" *ngIf ="liste1" shape="round" class = "button button-large">Commandes publiques</ion-button>
+  <ion-button href="https://www.google.be/?hl=fr" id="bouton1" (click)="deroulerListe1()" shape="round" class = "button button-large">Commandes</ion-button>
+    
   <ion-button id="bouton2" (click)="deroulerListe2()" shape="round" class = "button button-large">Stocks</ion-button>
     <ion-button id="boutonListe" *ngIf ="liste2" shape="round" class = "button button-large">Mon Stock</ion-button>
     <ion-button id="boutonListe" *ngIf ="liste2" shape="round" class = "button button-large">Entrêpot</ion-button>
   <ion-button id="bouton3" (click)="deroulerListe3()" shape="round" class = "button button-large">Ventes</ion-button>
-    <ion-button id="boutonListe" *ngIf ="liste3" shape="round" class = "button button-large">Factures</ion-button>
-    <ion-button id="boutonListe" *ngIf ="liste3" shape="round" class = "button button-large">Ventes</ion-button>
+   
   
   <ion-img src=".\assets\logo.png" alt="Logo de belgrains"></ion-img>
 </ion-content>
